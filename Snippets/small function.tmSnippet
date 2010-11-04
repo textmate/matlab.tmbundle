@@ -3,15 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%% ${1:functionname}: ${2:function description}
-function [${3:outputs}] = ${1}(${4:arg})
-${3/,?\s*([a-zA-Z]\w*)|,\s*/(?1:\t$1 = ;\n)/g}</string>
+	<string>function ${1:out} = ${2:f}(${3:in})
+	$0
+`if [[ $TM_CLOSE_FUNCTIONS -ne '0' ]]
+	then
+	if [[ $TM_USE_OCTAVE -ne '0' ]]
+		then echo "endfunction"
+	else
+		echo "end"
+	fi
+fi`</string>
 	<key>name</key>
 	<string>small function</string>
 	<key>scope</key>
 	<string>source.matlab, source.octave</string>
 	<key>tabTrigger</key>
-	<string>func</string>
+	<string>f</string>
 	<key>uuid</key>
 	<string>2376F2E2-E240-422F-B6E8-48B6AA20C9EE</string>
 </dict>

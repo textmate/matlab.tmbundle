@@ -3,14 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>function ${1:Output variables} = ${2:functionName}(${3:Input variables})
-$TM_COMMENT_START	${2/.*/\U$0/}   ${4:Short description}
-$TM_COMMENT_START		[${1/.*/\U$0/}] = ${2/.*/\U$0/}(${6:${3/.*/\U$0/}})
-$TM_COMMENT_START
-$TM_COMMENT_START	${5:Long description}
-$TM_COMMENT_START	
-$TM_COMMENT_START	Created by $TM_FULLNAME on `date +%Y-%m-%d`.
-$TM_COMMENT_START	Copyright (c) ${TM_YEAR} ${TM_ORGANIZATION_NAME}. All rights reserved.
+	<string>function ${1:out} = ${2:f}(${3:in})
+% ${2/.*/\U$0/} ${4:Description}
+%	${1/.*/\U$0/} = ${2/.*/\U$0/}(${6:${3/.*/\U$0/}})
+%
+% ${5:Long description}
 
 $0
 
@@ -19,15 +16,16 @@ $0
 	if [[ $TM_USE_OCTAVE -ne '0' ]]
 		then echo "endfunction"
 	else
-		echo "end $TM_COMMENT_START function" 
+		echo "end ${TM_COMMENT_START}function" 
 	fi
-fi`</string>
+fi`
+</string>
 	<key>name</key>
 	<string>function</string>
 	<key>scope</key>
 	<string>source.matlab, source.octave</string>
 	<key>tabTrigger</key>
-	<string>fun</string>
+	<string>function</string>
 	<key>uuid</key>
 	<string>0EA9BDAD-6EA3-48C4-ADF5-EA549D84CAF0</string>
 </dict>
