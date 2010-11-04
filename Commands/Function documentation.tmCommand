@@ -9,7 +9,7 @@
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
 if grep &lt;&lt;&lt;${TM_CURRENT_WORD:-!} -Esq '[a-zA-Z0-9_]+'
-	then exit_show_html "&lt;meta http-equiv='Refresh' content='0;URL=http://www.mathworks.com/access/helpdesk/help/techdoc/index.html?/access/helpdesk/help/techdoc/ref/${TM_CURRENT_WORD}.html'&gt;"
+	then exit_show_html "&lt;meta http-equiv='Refresh' content='0;URL=http://www.mathworks.com/access/helpdesk/help/techdoc/ref/${TM_CURRENT_WORD}.html'&gt;"
 	else echo "Nothing to lookup (hint: place the caret on a function name)"
 fi
 </string>
