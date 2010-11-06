@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env osascript
+
+set das_inputzen to do shell script "cat"
+set mt to missing value
+
+tell application "Terminal"
+    repeat with w in every window
+        repeat with t from 1 to (count tabs of w)
+            if processes of item t of tabs of w contains "MATLAB" then
+                set mw to id of w
+                set mt to t
+            end if
+        end repeat
+    end repeat
+    
+    if mt is not equal to missing value then
+        do script das_inputzen in tab mt of window id mw
+    end if
+end tell
+
+if mt is equal to missing value then
+    return "No running instances of MATLAB found."
+else
+    return
+end if
+</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Execute in Matlab</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>scope</key>
+	<string>source.matlab</string>
+	<key>uuid</key>
+	<string>064E306B-FF23-432B-952F-55AC3BEF029E</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
