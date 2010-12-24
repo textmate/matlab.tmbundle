@@ -22,6 +22,7 @@
 		<array>
 			<string>07FBCD52-B897-4931-AE99-86C5B25C2132</string>
 			<string>064E306B-FF23-432B-952F-55AC3BEF029E</string>
+			<string>E888D2B7-977A-4A68-A966-6BE2762EB9C3</string>
 			<string>------------------------------------</string>
 			<string>78BBA099-C976-415C-AA88-FE596173D38D</string>
 			<string>8EDB89D6-79E4-4A26-8E14-ED60254782FB</string>
@@ -174,6 +175,7 @@
 	<string>Matlab</string>
 	<key>ordering</key>
 	<array>
+		<string>652F22CD-6A4C-4308-B5F7-DBE6E0FE5538</string>
 		<string>548092DA-0275-4312-9F4F-5FA6375B1B01</string>
 		<string>3D39FA94-9A43-4CB1-8C72-F262E5DBF96E</string>
 		<string>2CD1353B-AEC7-4BBF-8061-6038D1E93FA8</string>
