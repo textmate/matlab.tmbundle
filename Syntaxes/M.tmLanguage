@@ -191,6 +191,17 @@
 							<string>\n</string>
 							<key>name</key>
 							<string>comment.line.double-percentage.matlab</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>begin</key>
+									<string>\G\s*(?![\n\s])</string>
+									<key>contentName</key>
+									<string>meta.cell.matlab</string>
+									<key>end</key>
+									<string>(?=\n)</string>
+								</dict>
+							</array>
 						</dict>
 					</array>
 				</dict>
