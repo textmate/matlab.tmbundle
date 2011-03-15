@@ -5,33 +5,34 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby
-# Wrap the current word or selected text in num2str()
-# or insert " if there is no word
+	<string>#!/usr/bin/env bash
 
-seltext = ENV['TM_SELECTED_TEXT'].to_s 
-curword = ENV['TM_CURRENT_WORD'].to_s
-
-if !seltext.empty?
-	print "num2str(", seltext, ")"
-elsif  !curword.empty?
-	print "num2str(", curword, ")"
-else
-    print "\""
-end</string>
+# If this were a snippet instead of a command, the construction
+#     num2str(${1:${TM_SELECTED_TEXT:$TM_CURRENT_WORD}})$0
+# would replace the SELECTED_TEXT, but append new stuff after the CURRENT_WORD
+echo -n num2str'(${1:'`cat -`'})$0'
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
 	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>^'</string>
 	<key>name</key>
 	<string>num2str</string>
-	<key>output</key>
-	<string>insertAsSnippet</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>snippet</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
 	<key>scope</key>
-	<string>(source.matlab|source.octave) - (string.quoted.single.matlab | comment.line.percentage.matlab | comment.double.percentage.matlab)</string>
+	<string>(source.matlab|source.octave) - (string | comment)</string>
 	<key>uuid</key>
 	<string>6F519B71-2D99-455B-9E4A-F614FD9CA253</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
