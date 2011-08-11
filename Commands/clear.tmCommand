@@ -20,7 +20,7 @@ puts "clear('${1:#{variables.join("','")}}'$2);"
 	<key>scope</key>
 	<string>source.matlab, source.octave</string>
 	<key>tabTrigger</key>
-	<string>cl</string>
+	<string>clear</string>
 	<key>uuid</key>
 	<string>31D0DE27-0382-4F5F-B005-351F9D9B4589</string>
 </dict>
