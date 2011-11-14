@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>fileTypes</key>
+	<array/>
 	<key>keyEquivalent</key>
 	<string>^~M</string>
 	<key>name</key>
@@ -160,18 +162,37 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>captures</key>
+					<key>begin</key>
+					<string>(^[ \t]+)?(?=%%)</string>
+					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.comment.matlab</string>
+							<string>punctuation.whitespace.comment.leading.matlab</string>
 						</dict>
 					</dict>
-					<key>match</key>
-					<string>(%%).*$\n?</string>
-					<key>name</key>
-					<string>comment.double.percentage.matlab</string>
+					<key>end</key>
+					<string>(?!\G)</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>begin</key>
+							<string>%%</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>0</key>
+								<dict>
+									<key>name</key>
+									<string>punctuation.definition.comment.matlab</string>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>\n</string>
+							<key>name</key>
+							<string>comment.line.double-percentage.matlab</string>
+						</dict>
+					</array>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -190,18 +211,37 @@
 					<string>comment.block.percentage.matlab</string>
 				</dict>
 				<dict>
-					<key>captures</key>
+					<key>begin</key>
+					<string>(^[ \t]+)?(?=%)</string>
+					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.comment.matlab</string>
+							<string>punctuation.whitespace.comment.leading.matlab</string>
 						</dict>
 					</dict>
-					<key>match</key>
-					<string>(%).*$\n?</string>
-					<key>name</key>
-					<string>comment.line.percentage.matlab</string>
+					<key>end</key>
+					<string>(?!\G)</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>begin</key>
+							<string>%</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>0</key>
+								<dict>
+									<key>name</key>
+									<string>punctuation.definition.comment.matlab</string>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>\n</string>
+							<key>name</key>
+							<string>comment.line.percentage.matlab</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 		</dict>
