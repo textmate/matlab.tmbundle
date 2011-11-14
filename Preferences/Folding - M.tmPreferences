@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Folding (M)</string>
+	<key>scope</key>
+	<string>source.matlab</string>
+	<key>settings</key>
+	<dict>
+		<key>foldingStartMarker</key>
+		<string>^\s*(function|if|switch|while|for|try)\b(?!.*\bend\b).*$</string>
+		<key>foldingStopMarker</key>
+		<string>^\s*(end|return)\b.*$</string>
+	</dict>
+	<key>uuid</key>
+	<string>75D71264-922A-440B-A0DC-CC865C2DC1D3</string>
+</dict>
+</plist>

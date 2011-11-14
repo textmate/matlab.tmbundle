@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>foldingStartMarker</key>
-	<string>^\s*(function|if|switch|while|for|try)\b(?!.*\bend\b).*$</string>
-	<key>foldingStopMarker</key>
-	<string>^\s*(end|return)\b.*$</string>
 	<key>keyEquivalent</key>
 	<string>^~M</string>
 	<key>name</key>
