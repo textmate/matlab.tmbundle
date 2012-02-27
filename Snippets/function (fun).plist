@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>function ${1:out} = ${2:f}(${3:in})
+	<string>function ${1:out} = ${2:${TM_FILENAME:?${TM_FILENAME/\.m//}:f}}(${3:in})
 % ${2/.*/\U$0/} ${4:Description}
 %	${1/.*/\U$0/} = ${2/.*/\U$0/}(${6:${3/.*/\U$0/}})
 %
