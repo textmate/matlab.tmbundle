@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby
+	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby
 thisline = ENV['TM_CURRENT_LINE']
 soft_tabs = ENV['TM_SOFT_TABS']
 tab_size = ENV['TM_TAB_SIZE'].to_i
