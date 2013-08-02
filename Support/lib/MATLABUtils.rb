@@ -51,7 +51,7 @@ module MATLAB
 						line.strip!
 						
 						# Strip out all core keywords
-						line.gsub!(/^\s*(function|if|switch|while|for|try)\s+/,'')
+						line.gsub!(/^\s*(function|if|switch|while|for|parfor|try)\s+/,'')
 
 						# Strip out all cells
 						while line =~ /[\{\}]/

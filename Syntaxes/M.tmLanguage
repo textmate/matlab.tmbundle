@@ -655,7 +655,7 @@
 			<key>comment</key>
 			<string>Control keywords</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(break|case|catch|continue|else|elseif|end|for|if|otherwise|pause|rethrow|return|start|startat|stop|switch|try|wait|while)\b</string>
+			<string>(?&lt;!\.)\b(break|case|catch|continue|else|elseif|end|for|parfor|if|otherwise|pause|rethrow|return|start|startat|stop|switch|try|wait|while)\b</string>
 			<key>name</key>
 			<string>keyword.control.matlab</string>
 		</dict>

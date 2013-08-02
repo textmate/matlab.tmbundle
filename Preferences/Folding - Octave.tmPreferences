@@ -9,9 +9,9 @@
 	<key>settings</key>
 	<dict>
 		<key>foldingStartMarker</key>
-		<string>^\s*(function|if|switch|while|for|try)\b(?!.*\b(end|endfunction|endif|endswitch|endwhile|endfor|endtry)\b).*$</string>
+		<string>^\s*(function|if|switch|while|for|parfor|try)\b(?!.*\b(end|endfunction|endif|endswitch|endwhile|endfor|endparfor|endtry)\b).*$</string>
 		<key>foldingStopMarker</key>
-		<string>^\s*(end|return|endfunction|endif|endswitch|endwhile|endfor|endtry)\b.*$</string>
+		<string>^\s*(end|return|endfunction|endif|endswitch|endwhile|endfor|endparfor|endtry)\b.*$</string>
 	</dict>
 	<key>uuid</key>
 	<string>D861F822-4411-4330-8E9E-E9FCCF9C7449</string>

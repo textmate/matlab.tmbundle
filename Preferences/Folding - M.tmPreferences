@@ -9,7 +9,7 @@
 	<key>settings</key>
 	<dict>
 		<key>foldingStartMarker</key>
-		<string>^\s*(function|if|switch|while|for|try)\b(?!.*\bend\b).*$</string>
+		<string>^\s*(function|if|switch|while|for|parfor|try)\b(?!.*\bend\b).*$</string>
 		<key>foldingStopMarker</key>
 		<string>^\s*(end|return)\b.*$</string>
 	</dict>

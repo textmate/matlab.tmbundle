@@ -35,8 +35,8 @@
        function
        |if|else|elseif
        |switch|case|otherwise
-       |for|while
-	   |try|catch
+       |for|parfor|while
+       |try|catch
        |unwind_protect
 	)\b</string>
 		<key>shellVariables</key>
