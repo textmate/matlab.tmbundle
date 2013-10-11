@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>fileTypes</key>
-	<array/>
+	<array>
+		<string>m</string>
+	</array>
 	<key>keyEquivalent</key>
 	<string>^~M</string>
 	<key>name</key>
