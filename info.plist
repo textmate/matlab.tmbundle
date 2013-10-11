@@ -6,10 +6,6 @@
 	<string>zngg.c.sbfgre@tznvy.pbz</string>
 	<key>contactName</key>
 	<string>Matt Foster</string>
-	<key>deleted</key>
-	<array>
-		<string>E190EAB2-D99C-4DDC-90A2-0F17A014FE07</string>
-	</array>
 	<key>description</key>
 	<string>Support for &lt;a href="http://www.mathworks.com/products/matlab/"&gt;MATLAB&lt;/a&gt;, and  &lt;a href="http://octave.org"&gt;Octave&lt;/a&gt;, two largely compatible high-level languages that enables you to perform computationally intensive tasks faster than with traditional programming languages.</string>
 	<key>mainMenu</key>
@@ -24,6 +20,9 @@
 			<string>064E306B-FF23-432B-952F-55AC3BEF029E</string>
 			<string>E888D2B7-977A-4A68-A966-6BE2762EB9C3</string>
 			<string>------------------------------------</string>
+			<string>D7A8ED42-49E0-4CF3-A6C8-BE8DAB76267A</string>
+			<string>033730AF-96F5-4F0C-9199-E0683D40A22C</string>
+			<string>------------------------------------</string>
 			<string>8EDB89D6-79E4-4A26-8E14-ED60254782FB</string>
 			<string>B5959BD1-48FB-495C-A3C3-AE04B05774C7</string>
 			<string>C5A70337-F3D2-4841-8A74-1B2CA2296B14</string>
@@ -33,14 +32,7 @@
 			<string>------------------------------------</string>
 			<string>535265FA-BB76-44F3-9970-374A249147E0</string>
 			<string>AD157889-CCD6-47D3-A5E5-0BD7BC719DD2</string>
-			<string>------------------------------------</string>
-			<string>D7A8ED42-49E0-4CF3-A6C8-BE8DAB76267A</string>
 			<string>459DF644-53A3-4ADD-8984-D4412CF44279</string>
-			<string>033730AF-96F5-4F0C-9199-E0683D40A22C</string>
-			<string>631FAA9C-ECC2-484A-A29C-3CD66D944693</string>
-			<string>B287F24B-9BC5-4EAB-9621-1E73D367AAB7</string>
-			<string>9475371F-F8A7-4C46-BAC9-B42E7E34F2AD</string>
-			<string>5C7F21FA-156C-4A86-AB20-7F9678010BCA</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -86,6 +78,7 @@
 					<string>------------------------------------</string>
 					<string>0EA9BDAD-6EA3-48C4-ADF5-EA549D84CAF0</string>
 					<string>2376F2E2-E240-422F-B6E8-48B6AA20C9EE</string>
+					<string>5C7F21FA-156C-4A86-AB20-7F9678010BCA</string>
 					<string>------------------------------------</string>
 					<string>876FEC4C-FD21-401A-8947-0B2E232E19CA</string>
 					<string>4A86BFC8-5C03-45F8-B7D6-597F476E7C93</string>
@@ -93,8 +86,11 @@
 					<string>582075F1-DB3F-4280-9F46-B615F8EF4A86</string>
 					<string>EA7BD80E-6346-44E9-A909-CE0703CFB390</string>
 					<string>------------------------------------</string>
+					<string>B287F24B-9BC5-4EAB-9621-1E73D367AAB7</string>
+					<string>631FAA9C-ECC2-484A-A29C-3CD66D944693</string>
 					<string>C600A817-A58A-4884-9BDC-F7CB13407CB6</string>
 					<string>F7A928F5-B70D-4DB0-8DEF-F61928038A6C</string>
+					<string>9475371F-F8A7-4C46-BAC9-B42E7E34F2AD</string>
 					<string>------------------------------------</string>
 					<string>08CB1F21-B7EB-4AD7-B066-BB365966E390</string>
 					<string>B8E195CE-1606-4311-900D-4A1E1ACE6F94</string>
@@ -152,75 +148,6 @@
 	</dict>
 	<key>name</key>
 	<string>Matlab</string>
-	<key>ordering</key>
-	<array>
-		<string>652F22CD-6A4C-4308-B5F7-DBE6E0FE5538</string>
-		<string>548092DA-0275-4312-9F4F-5FA6375B1B01</string>
-		<string>3D39FA94-9A43-4CB1-8C72-F262E5DBF96E</string>
-		<string>2CD1353B-AEC7-4BBF-8061-6038D1E93FA8</string>
-		<string>07FBCD52-B897-4931-AE99-86C5B25C2132</string>
-		<string>064E306B-FF23-432B-952F-55AC3BEF029E</string>
-		<string>D7A8ED42-49E0-4CF3-A6C8-BE8DAB76267A</string>
-		<string>563CDF89-C286-4CDB-94AB-30819104470F</string>
-		<string>1166137D-A579-484D-BDD7-AC62EFFA3FFA</string>
-		<string>9915BCE4-2499-4E17-9006-7BB08A8539F0</string>
-		<string>A93C4844-87F4-4136-9580-75B697D0CFD7</string>
-		<string>2FED97FA-0EB0-45E3-B92F-757903E79684</string>
-		<string>3FFA60EB-FA14-47DE-AEF7-5A3E840BE637</string>
-		<string>F674E1B2-5BA5-4397-9D54-D48623E9F2FD</string>
-		<string>876FEC4C-FD21-401A-8947-0B2E232E19CA</string>
-		<string>08CB1F21-B7EB-4AD7-B066-BB365966E390</string>
-		<string>ADE63DB1-7F3A-4EAC-A5A4-3A35A28FE8F0</string>
-		<string>F7A928F5-B70D-4DB0-8DEF-F61928038A6C</string>
-		<string>0EA9BDAD-6EA3-48C4-ADF5-EA549D84CAF0</string>
-		<string>8E4BA761-42BB-4CFC-B117-A547228878B8</string>
-		<string>6392FF26-D584-435E-8202-9BC99FF26488</string>
-		<string>7135F592-1176-478A-BA31-BD8A7DA56F93</string>
-		<string>975C9569-8B7D-4A60-8ED4-478A724D3A4E</string>
-		<string>EC4078AC-7F43-42CA-A83A-E1477558D84E</string>
-		<string>163D3790-C8E8-4888-81D7-50907D825EA0</string>
-		<string>71CFA3F2-D883-4571-95B9-D98651890156</string>
-		<string>F0A7C9BF-8FE2-4452-8EC9-F71881C7831F</string>
-		<string>BEAE3101-B710-4BDE-A178-247F9FB6C018</string>
-		<string>321567FE-2E57-4D5C-BEFB-98FE869FF4D7</string>
-		<string>9FF80E01-2981-4D11-8E87-872FCCD0304E</string>
-		<string>41EA6496-FA26-4F74-90B1-F316A4C451AE</string>
-		<string>48F8858B-72FF-11D9-BFEE-000D93589AF6</string>
-		<string>236A240E-F4DA-45BA-905C-4046055E6247</string>
-		<string>FCA472FC-0F54-4C92-BFE1-00880FE1DA3F</string>
-		<string>5EC2B9C8-1311-4C27-A421-A7982E6418AA</string>
-		<string>219A59CC-83FE-484F-B1C8-2F6357056F2F</string>
-		<string>DCAA0C20-AF0B-4E64-A947-43DA07B901A4</string>
-		<string>0FDCE9D1-A757-4793-816D-1364192CE326</string>
-		<string>8325A3D7-1025-48C4-810F-CF41E7E71DA2</string>
-		<string>0844D21C-383B-4106-8474-8F79589731C6</string>
-		<string>F23DAE9B-A27A-41D3-B57B-DED30729243C</string>
-		<string>8A857EDA-B07B-4304-BA10-29C3D22A3B1B</string>
-		<string>615CF7DB-FDB1-4013-9725-FDF4BE64E8A4</string>
-		<string>FD9512A7-561A-4140-A425-567B8D2862EA</string>
-		<string>12A5489D-0A50-4420-A53D-FB0C6A2794CD</string>
-		<string>732F1DA4-166B-44AF-88CD-5A944574D3CC</string>
-		<string>033730AF-96F5-4F0C-9199-E0683D40A22C</string>
-		<string>AD7201FB-23AD-4105-B8E3-5AAD29419FA6</string>
-		<string>D21BACE2-24A1-43EF-854C-460F5A55694E</string>
-		<string>459DF644-53A3-4ADD-8984-D4412CF44279</string>
-		<string>6B86576E-F8E3-4E3A-8083-CFE4C0DF9E42</string>
-		<string>31D0DE27-0382-4F5F-B005-351F9D9B4589</string>
-		<string>582075F1-DB3F-4280-9F46-B615F8EF4A86</string>
-		<string>C00046EC-C7DC-4BC5-81CD-EBCB0F6FE8F7</string>
-		<string>93234216-9807-416E-8416-A130A05C2C1F</string>
-		<string>6F519B71-2D99-455B-9E4A-F614FD9CA253</string>
-		<string>EA2AB0C2-A215-4503-930C-785CDF66F95B</string>
-		<string>2376F2E2-E240-422F-B6E8-48B6AA20C9EE</string>
-		<string>40B52D65-1B7C-4874-AA30-B4C95089CE55</string>
-		<string>4B350792-24A2-4083-A8FB-509DF4BD709A</string>
-		<string>5C7F21FA-156C-4A86-AB20-7F9678010BCA</string>
-		<string>631FAA9C-ECC2-484A-A29C-3CD66D944693</string>
-		<string>C600A817-A58A-4884-9BDC-F7CB13407CB6</string>
-		<string>B287F24B-9BC5-4EAB-9621-1E73D367AAB7</string>
-		<string>9475371F-F8A7-4C46-BAC9-B42E7E34F2AD</string>
-		<string>B8E195CE-1606-4311-900D-4A1E1ACE6F94</string>
-	</array>
 	<key>uuid</key>
 	<string>AF26E7BD-72FF-11D9-B408-000D93589AF6</string>
 </dict>
