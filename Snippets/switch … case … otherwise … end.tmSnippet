@@ -4,10 +4,10 @@
 <dict>
 	<key>content</key>
 	<string>switch ${1:var}
-case ${2:'${3:string}'}
-	$4
-otherwise
-	$0
+	case ${2:'${3:string}'}
+		$4
+	otherwise
+		$0
 `if [[ $TM_USE_OCTAVE -ne '0' ]]
 	then echo "endswitch"
 else
