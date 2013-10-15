@@ -35,6 +35,24 @@
 		<array>
 			<dict>
 				<key>name</key>
+				<string>TM_USE_OCTAVE</string>
+				<key>value</key>
+				<string>1</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>TM_CLOSE_FUNCTIONS</string>
+				<key>value</key>
+				<string>1</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>TM_COMMENT_START</string>
+				<key>value</key>
+				<string>% </string>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>TM_COMMENT_START_2</string>
 				<key>value</key>
 				<string># </string>
