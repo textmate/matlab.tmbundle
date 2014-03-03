@@ -1,6 +1,9 @@
 #!/usr/bin/env osascript
 
-set das_inputzen to do shell script "cat"
+set das_inputzen to system attribute "TM_SELECTED_TEXT"
+if das_inputzen is equal to "" then
+	set das_inputzen to system attribute "TM_CURRENT_LINE"
+end
 set mt to missing value
 
 tell application "Terminal"
