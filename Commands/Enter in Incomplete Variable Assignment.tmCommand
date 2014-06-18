@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby
+	<string>#!/usr/bin/env ruby18
 lineindex = ENV['TM_LINE_INDEX'].to_i
 thisline = ENV['TM_CURRENT_LINE']
 scopes = ENV['TM_SCOPE'].split
