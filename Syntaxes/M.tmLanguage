@@ -257,6 +257,71 @@
 					</array>
 				</dict>
 				<dict>
+					<key>begin</key>
+					<string>(?x)
+						(^\s*)								# Leading whitespace
+						(events)
+						\s+
+						(									# Optional attributes
+							\( [^)]* \)
+						)?
+						\s*($|(?=%))
+					</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.events.matlab</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>match</key>
+									<string>[a-zA-Z_]\w*</string>
+									<key>name</key>
+									<string>variable.parameter.events.matlab</string>
+								</dict>
+								<dict>
+									<key>begin</key>
+									<string>=\s*</string>
+									<key>end</key>
+									<string>,|(?=\))</string>
+									<key>patterns</key>
+									<array>
+										<dict>
+											<key>match</key>
+											<string>true|false</string>
+											<key>name</key>
+											<string>constant.language.boolean.matlab</string>
+										</dict>
+										<dict>
+											<key>match</key>
+											<string>public|protected|private</string>
+											<key>name</key>
+											<string>constant.language.access.matlab</string>
+										</dict>
+									</array>
+								</dict>
+							</array>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>^\s*(end)\b</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.events.end.matlab</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.events.matlab</string>
+				</dict>
+				<dict>
 					<key>include</key>
 					<string>$self</string>
 				</dict>
