@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol List: Functions</string>
 	<key>scope</key>
-	<string>source.matlab meta.function.with-arguments, source.matlab meta.function.without-arguments</string>
+	<string>meta.function.matlab</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
