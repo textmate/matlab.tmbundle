@@ -113,6 +113,78 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>begin</key>
+					<string>(?x)
+						(^\s*)								# Leading whitespace
+						(properties)
+						\s+
+						(									# Optional attributes
+							\( [^)]* \)
+						)?
+						\s*($|(?=%))
+					</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.properties.matlab</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>match</key>
+									<string>[a-zA-Z_]\w*</string>
+									<key>name</key>
+									<string>variable.parameter.properties.matlab</string>
+								</dict>
+								<dict>
+									<key>begin</key>
+									<string>=\s*</string>
+									<key>end</key>
+									<string>,|(?=\))</string>
+									<key>patterns</key>
+									<array>
+										<dict>
+											<key>match</key>
+											<string>true|false</string>
+											<key>name</key>
+											<string>constant.language.boolean.matlab</string>
+										</dict>
+										<dict>
+											<key>match</key>
+											<string>public|protected|private</string>
+											<key>name</key>
+											<string>constant.language.access.matlab</string>
+										</dict>
+									</array>
+								</dict>
+							</array>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>^\s*(end)\b</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.properties.end.matlab</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.properties.matlab</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
 					<key>include</key>
 					<string>$self</string>
 				</dict>
