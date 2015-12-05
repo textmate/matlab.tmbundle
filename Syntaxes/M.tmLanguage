@@ -18,12 +18,105 @@
 				(^\s*)								# Leading whitespace
 				(classdef)
 				\s+
+				(									# Optional attributes
+					\( [^)]* \)
+					\s*
+				)?
 				([a-zA-Z_]\w*)						# Class name
+				(?:									# Optional inheritance
+					\s*
+					(&lt;)
+					\s*
+					([^%]*)
+				)?
+				\s*($|(?=%))
 			</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.function.matlab</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>match</key>
+							<string>[a-zA-Z_]\w*</string>
+							<key>name</key>
+							<string>variable.parameter.class.matlab</string>
+						</dict>
+						<dict>
+							<key>begin</key>
+							<string>=\s*</string>
+							<key>end</key>
+							<string>,|(?=\))</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>match</key>
+									<string>true|false</string>
+									<key>name</key>
+									<string>constant.language.boolean.matlab</string>
+								</dict>
+								<dict>
+									<key>include</key>
+									<string>#string</string>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.section.class.matlab</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.other.matlab</string>
+				</dict>
+				<key>6</key>
+				<dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>match</key>
+							<string>[a-zA-Z_]\w*(\.[a-zA-Z_]\w*)?</string>
+							<key>name</key>
+							<string>entity.other.inherited-class.matlab</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>&amp;</string>
+							<key>name</key>
+							<string>keyword.operator.other.matlab</string>
+						</dict>
+					</array>
+				</dict>
+			</dict>
 			<key>end</key>
 			<string>^\s*(end)\b</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.class.end.matlab</string>
+				</dict>
+			</dict>
 			<key>name</key>
 			<string>meta.class.matlab</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>begin</key>
