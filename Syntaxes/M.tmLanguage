@@ -298,6 +298,57 @@
 				</dict>
 				<dict>
 					<key>begin</key>
+					<string>(^\s*)(while)\s+</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>meta.while-condition.matlab</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.while.matlab</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>^\s*(end)\b</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.while.end.matlab</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.while.matlab</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>begin</key>
+							<string>\G(?!$)</string>
+							<key>end</key>
+							<string>$\n?</string>
+							<key>name</key>
+							<string>meta.while-condition.matlab</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>$self</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
 					<string>(^\s*)(switch)\s+</string>
 					<key>beginCaptures</key>
 					<dict>
