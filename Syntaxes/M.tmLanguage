@@ -114,7 +114,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.for.end.matlab</string>
+							<string>keyword.control.end.for.matlab</string>
 						</dict>
 					</dict>
 					<key>name</key>
@@ -165,7 +165,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.for.end.matlab</string>
+							<string>keyword.control.end.for.matlab</string>
 						</dict>
 					</dict>
 					<key>name</key>
@@ -216,7 +216,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.if.end.matlab</string>
+							<string>keyword.control.end.if.matlab</string>
 						</dict>
 					</dict>
 					<key>name</key>
@@ -319,7 +319,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.while.end.matlab</string>
+							<string>keyword.control.end.while.matlab</string>
 						</dict>
 					</dict>
 					<key>name</key>
@@ -370,7 +370,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.switch.end.matlab</string>
+							<string>keyword.control.end.switch.matlab</string>
 						</dict>
 					</dict>
 					<key>name</key>
@@ -468,7 +468,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.try.end.matlab</string>
+							<string>keyword.control.end.try.matlab</string>
 						</dict>
 					</dict>
 					<key>name</key>
@@ -1092,7 +1092,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.class.end.matlab</string>
+							<string>keyword.control.end.class.matlab</string>
 						</dict>
 					</dict>
 					<key>name</key>
@@ -1158,7 +1158,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.properties.end.matlab</string>
+									<string>keyword.control.end.properties.matlab</string>
 								</dict>
 							</dict>
 							<key>name</key>
@@ -1230,7 +1230,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.methods.end.matlab</string>
+									<string>keyword.control.end.methods.matlab</string>
 								</dict>
 							</dict>
 							<key>name</key>
@@ -1302,7 +1302,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.events.end.matlab</string>
+									<string>keyword.control.end.events.matlab</string>
 								</dict>
 							</dict>
 							<key>name</key>
@@ -1330,7 +1330,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.enumeration.end.matlab</string>
+									<string>keyword.control.end.enumeration.matlab</string>
 								</dict>
 							</dict>
 							<key>name</key>
@@ -1576,7 +1576,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.function.end.matlab</string>
+							<string>keyword.control.end.function.matlab</string>
 						</dict>
 					</dict>
 					<key>name</key>
