@@ -606,7 +606,7 @@
 							<key>comment</key>
 							<string>Desktop Tools and Development</string>
 							<key>match</key>
-							<string>(?&lt;!\.)\b(addpath|assignin|builddocsearchdb|cd|checkin|checkout|clc|clear|clipboard|cmopts|commandhistory|commandwindow|computer|copyfile|customverctrl|dbclear|dbcont|dbdown|dbquit|dbstack|dbstatus|dbstep|dbstop|dbtype|dbup|debug|demo|diary|dir|doc|docopt|docsearch|dos|echodemo|edit|exit|fileattrib|filebrowser|finish|format|genpath|getenv|grabcode|help|helpbrowser|helpwin|home|hostid|info|keyboard|license|lookfor|ls|matlab|matlabrc|matlabroot|memory|mkdir|mlint|mlintrpt|more|movefile|notebook|openvar|pack|partialpath|path|path2rc|pathdef|pathsep|pathtool|perl|playshow|prefdir|preferences|profile|profsave|publish|pwd|quit|recycle|rehash|restoredefaultpath|rmdir|rmpath|savepath|setenv|startup|support|system|toolboxdir|type|undocheckout|unix|ver|verctrl|verLessThan|version|web|what|whatsnew|which|winqueryreg|workspace)\b|(^\s*!.*$)</string>
+							<string>(?&lt;!\.)\b(addpath|assignin|builddocsearchdb|cd|checkin|checkout|clc|clear|clipboard|cmopts|commandhistory|commandwindow|computer|copyfile|customverctrl|dbclear|dbcont|dbdown|dbquit|dbstack|dbstatus|dbstep|dbstop|dbtype|dbup|debug|demo|diary|dir|doc|docopt|docsearch|dos|echodemo|edit|exit|fileattrib|filebrowser|finish|format|genpath|getenv|grabcode|help|helpbrowser|helpwin|home|hostid|info|keyboard|license|lookfor|ls|matlab|matlabrc|matlabroot|memory|mkdir|mlint|mlintrpt|more|movefile|notebook|openvar|pack|partialpath|path|path2rc|pathdef|pathsep|pathtool|perl|playshow|prefdir|preferences|profile|profsave|publish|pwd|quit|recycle|rehash|restoredefaultpath|rmdir|rmpath|savepath|setenv|startup|support|system|toolboxdir|type|undocheckout|unix|ver|verctrl|verLessThan|version|web|what|whatsnew|which|winqueryreg|workspace)\b</string>
 							<key>name</key>
 							<string>keyword.other.desktop.matlab</string>
 						</dict>
@@ -1673,49 +1673,73 @@
 		</dict>
 		<key>string</key>
 		<dict>
-			<key>begin</key>
-			<string>((?&lt;=(\[|\(|\{|=|\s|;|:|,))|^)'</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.matlab</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>'(?=(\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|\.|\^|\||\s|;|:|,))</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.matlab</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>string.quoted.single.matlab</string>
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>match</key>
-					<string>''</string>
-					<key>name</key>
-					<string>constant.character.escape.matlab</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>'(?=.)</string>
-					<key>name</key>
-					<string>invalid.illegal.unescaped-quote.matlab</string>
-				</dict>
-				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>string.interpolated.matlab</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.matlab</string>
+						</dict>
+					</dict>
 					<key>comment</key>
-					<string>Operator symbols</string>
+					<string>Shell command</string>
 					<key>match</key>
-					<string>((\%([\+\-0]?\d{0,3}(\.\d{1,3})?)(c|d|e|E|f|g|G|s|((b|t)?(o|u|x|X))))|\%\%|\\(b|f|n|r|t|\\))</string>
+					<string>^\s*((!).*$\n?)</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>((?&lt;=(\[|\(|\{|=|\s|;|:|,))|^)'</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.matlab</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>'(?=(\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|\.|\^|\||\s|;|:|,))</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.matlab</string>
+						</dict>
+					</dict>
 					<key>name</key>
-					<string>constant.character.escape.matlab</string>
+					<string>string.quoted.single.matlab</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>match</key>
+							<string>''</string>
+							<key>name</key>
+							<string>constant.character.escape.matlab</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>'(?=.)</string>
+							<key>name</key>
+							<string>invalid.illegal.unescaped-quote.matlab</string>
+						</dict>
+						<dict>
+							<key>comment</key>
+							<string>Operator symbols</string>
+							<key>match</key>
+							<string>((\%([\+\-0]?\d{0,3}(\.\d{1,3})?)(c|d|e|E|f|g|G|s|((b|t)?(o|u|x|X))))|\%\%|\\(b|f|n|r|t|\\))</string>
+							<key>name</key>
+							<string>constant.character.escape.matlab</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 		</dict>
