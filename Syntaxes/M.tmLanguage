@@ -1631,7 +1631,7 @@
 			<key>comment</key>
 			<string>Operator symbols</string>
 			<key>match</key>
-			<string>\s*(==|~=|&gt;|&gt;=|&lt;|&lt;=|&amp;|&amp;&amp;|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)\s*</string>
+			<string>(?&lt;=\s)(==|~=|&gt;|&gt;=|&lt;|&lt;=|&amp;|&amp;&amp;|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)(?=\s)</string>
 			<key>name</key>
 			<string>keyword.operator.symbols.matlab</string>
 		</dict>
