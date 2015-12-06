@@ -1009,13 +1009,15 @@
 							\( [^)]* \)
 							\s*
 						)?
-						([a-zA-Z_]\w*)						# Class name
-						(?:									# Optional inheritance
-							\s*
-							(&lt;)
-							\s*
-							([^%]*)
-						)?
+						(
+							([a-zA-Z_]\w*)					# Class name
+							(?:								# Optional inheritance
+								\s*
+								(&lt;)
+								\s*
+								([^%]*)
+							)?
+						)
 						\s*($|(?=%))
 					</string>
 					<key>beginCaptures</key>
@@ -1059,14 +1061,19 @@
 						<key>4</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.section.class.matlab</string>
+							<string>meta.class-declaration.matlab</string>
 						</dict>
 						<key>5</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.operator.other.matlab</string>
+							<string>entity.name.section.class.matlab</string>
 						</dict>
 						<key>6</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.operator.other.matlab</string>
+						</dict>
+						<key>7</key>
 						<dict>
 							<key>patterns</key>
 							<array>
