@@ -399,6 +399,68 @@
 						</dict>
 					</array>
 				</dict>
+				<dict>
+					<key>begin</key>
+					<string>(^\s*)(try)\s*($\n?|%)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.try.matlab</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>^\s*(end)\b</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.try.end.matlab</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.try.matlab</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>beginCaptures</key>
+							<dict>
+								<key>0</key>
+								<dict>
+									<key>name</key>
+									<string>meta.catch-exception.matlab</string>
+								</dict>
+								<key>2</key>
+								<dict>
+									<key>name</key>
+									<string>keyword.control.catch.matlab</string>
+								</dict>
+								<key>3</key>
+								<dict>
+									<key>patterns</key>
+									<array>
+										<dict>
+											<key>include</key>
+											<string>$self</string>
+										</dict>
+									</array>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>^</string>
+							<key>match</key>
+							<string>(^\s*)(catch)(\s+.*)$\n?</string>
+							<key>name</key>
+							<string>meta.catch.matlab</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
 			</array>
 		</dict>
 		<key>brackets</key>
